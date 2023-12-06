@@ -18,6 +18,59 @@
     color: #F8F7FF
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.first-title {
+    grid-column: 2 / span 1;
+    /* Commence à la deuxième colonne, s'étend sur une colonne */
+    grid-row: 1 / span 1;
+    /* Commence à la première ligne, s'étend sur une ligne */
+}
+
+.one {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+
+    }
+}
+
+.two {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+
+    }
+}
+
+.three {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 1;
+
+    }
+}
+
+.second-title {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+
 
 
 body {
@@ -34,6 +87,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     width: 100%;
+
+    @media screen and (max-width: 991px) {
+        margin-top: 30vh;
+
+    }
 }
 
 .anti-nav {
@@ -55,6 +113,18 @@ body {
     text-decoration: none;
     border-radius: 50px;
     z-index: 1;
+
+    @media screen and (max-width: 991px) {
+        justify-content: flex-end;
+        top: auto;
+        left: auto;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        text-align: center;
+        padding: 0px;
+        border-radius: 0px;
+    }
 }
 
 .my-nav-box li {
@@ -63,12 +133,32 @@ body {
     display: flex;
     justify-content: center;
 
-}
+    @media screen and (max-width: 991px) {
+        display: inline-block;
+        margin-right: 100px;
+        margin-bottom: 15px;
+        /* Ajoutez une marge à droite pour espacer les éléments */
+        flex: 0 0 auto;
+        /* Assurez-vous que la flexibilité est correcte */
+        justify-content: center;
+    }
 
+    @media screen and (max-width: 765px) {
+        margin-right: 40px;
+    }
+}
 
 
 .my-nav-box li:first-child {
     margin-top: 40px;
+
+    @media screen and (max-width: 991px) {
+        margin-left: 100px;
+    }
+
+    @media screen and (max-width: 765px) {
+        margin-left: 40px;
+    }
 }
 
 .my-nav-box a {
@@ -81,20 +171,45 @@ body {
     transition: color 0.3s ease;
 }
 
-/*Profile section*/
+.space-over-section {
+    margin-top: 20vh;
+}
+
+/*PROFILE--------------------------*/
 
 #profile {
-    margin-top: 10vh;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 #profile img {
     position: relative;
     top: -2vh;
+    width: 100%;
 
 }
 
-/*Skills section*/
+/*SKILLS --------------------------*/
 
 #skills {
     margin-top: 25vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#skills img {
+    position: relative;
+    top: -2vh;
+    width: 100%;
+
+}
+
+/*FOOTER--------------------------*/
+
+.footer {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content: center;
 }
