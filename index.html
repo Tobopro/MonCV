@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Accueil</title>
     <title>Bienvenue sur mon CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
@@ -16,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script defer src="monscript.js"></script>
 </head>
 
 <body>
@@ -36,53 +38,58 @@
     <main class="anti-nav ">
 
         <section id="profile">
-            &nbsp;<br>&nbsp;
-            <div class="wrapper">
-                <div class="first-title">
-                    <div class="text-center">
-                        <h1 class="font-title">Tom Boyer</h1>
-                        <img src="assets/img/line_for_name_profile.png" alt="">
+            <div class="margin-profile">
+                &nbsp;<br>&nbsp;
+
+                <div class="wrapper ">
+                    <div class="first-title">
+                        <div class="text-center">
+                            <h1 class="font-title">Tom Boyer</h1>
+                            <img src="assets/img/line_for_name_profile.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="wrapper">
-                <div class="one">
-                    <section>
-                        <h2 class="font-subtitle text-center">Qui suis-je ?</h2>
-                        <p>Actuellement en formation de développeur intégrateur web DIPSW, je suis à la recherche
-                            d'un
-                            stage
-                            de 3 mois du 14 mars 2023 au 14 juin 2023.</p>
-                        <p>M'ayant découvert une passion pour le développement, je compte continuer mon parcours
-                            jusqu'à
-                            l'obtention du diplome M2I Bac+5 en alternance l'année prochaine</p>
-                    </section>
+
+                <div class="wrapper">
+                    <div class="one">
+                        <section>
+                            <h2 class="font-subtitle text-center">Qui suis-je ?</h2>
+                            <p>Actuellement en formation de développeur intégrateur web DIPSW, je suis à la recherche
+                                d'un
+                                stage
+                                de 3 mois du 14 mars 2023 au 14 juin 2023.</p>
+                            <p>M'ayant découvert une passion pour le développement, je compte continuer mon parcours
+                                jusqu'à
+                                l'obtention du diplome M2I Bac+5 en alternance l'année prochaine</p>
+                        </section>
+                    </div>
+
+
+                    <div class="two">
+                        <section id="profile_picture" class=" text-center ">
+                            <img src="assets/img/placeholder_profile_picture_rounded.png" alt="">
+                        </section>
+                    </div>
+
+
+                    <div class="three">
+                        <section>
+                            <h2 class="font-subtitle text-center">Mes intérêts</h2>
+                            <p> Sur mon temps libre, je me consacre à la correction d'un roman de fantasy que j'ai
+                                écrit.
+                            </p>
+                            <p> Je pratique également beaucoup de sport pour m'aérer l'esprit et me vider la tête. </p>
+                            <p>J'ai toujours eu
+                                un attrait pour les langues, c'est la raison pour laquelle j'apprends l'espagnol en
+                                autodidacte.
+                            </p>
+                            <p> Je profite également de mes jours de repos pour paufiner mes compétences musicales, et
+                                pour
+                                développer mes compétences dans le dessin.</p>
+                        </section>
+                    </div>
                 </div>
 
-
-                <div class="two">
-                    <section id="profile_picture" class=" text-center ">
-                        <img src="assets/img/placeholder_profile_picture_rounded.png" alt="">
-                    </section>
-                </div>
-
-
-                <div class="three">
-                    <section>
-                        <h2 class="font-subtitle text-center">Mes intérêts</h2>
-                        <p> Sur mon temps libre, je me consacre à la correction d'un roman de fantasy que j'ai
-                            écrit.
-                        </p>
-                        <p> Je pratique également beaucoup de sport pour m'aérer l'esprit et me vider la tête. </p>
-                        <p>J'ai toujours eu
-                            un attrait pour les langues, c'est la raison pour laquelle j'apprends l'espagnol en
-                            autodidacte.
-                        </p>
-                        <p> Je profite également de mes jours de repos pour paufiner mes compétences musicales, et
-                            pour
-                            développer mes compétences dans le dessin.</p>
-                    </section>
-                </div>
             </div>
 
 
@@ -90,48 +97,167 @@
 
         <section id="skills">
             &nbsp;<br>&nbsp;
-            <div class="wrapper">
-                <div class="first-title">
-                    <div class="text-center">
-                        <h1 class="font-title">Mes compétences</h1>
-                        <img src="assets/img/line_for_name_profile.png" alt="">
+
+            <h2 class="title-skills">Mes compétences</h2>
+            <section class="section__card">
+                <div class="wrapper">
+                    <div class="one">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header html-card-header">
+                                <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>HTML</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Canvas</li>
+                                    <li>Semantic</li>
+                                    <li>Svg</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="two">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header css-card-header">
+                                <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>CSS</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Bootstrap</li>
+                                    <li>Semantic UI</li>
+                                    <li>Sass</li>
+                                    <li>Components</li>
+                                    <li>Animations</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="three">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header js-card-header">
+                                <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>javascript</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>jQuery</li>
+                                    <li>ECMASCRIPT 6</li>
+                                    <li>Ajax</li>
+                                </ul>
+                            </div>
+
+                        </article>
+                    </div>
+                    <div class="four">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header illustrator-card-header">
+                                <img src="assets/img/Illustrator.png" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>HTML</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Canvas</li>
+                                    <li>Semantic</li>
+                                    <li>Svg</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="five">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header sass-card-header">
+                                <img src="assets/img/Sass.png" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>HTML</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Canvas</li>
+                                    <li>Semantic</li>
+                                    <li>Svg</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="six">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header php-card-header">
+                                <img src="assets/img/php.png" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>HTML</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Canvas</li>
+                                    <li>Semantic</li>
+                                    <li>Svg</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="seven">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header git-card-header">
+                                <img src="assets/img/github.png" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>HTML</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Canvas</li>
+                                    <li>Semantic</li>
+                                    <li>Svg</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="eight">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header symfony-card-header">
+                                <img src="assets/img/symfony.svg" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>HTML</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Canvas</li>
+                                    <li>Semantic</li>
+                                    <li>Svg</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="nine">
+                        <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)">
+                            <div class="card__header figma-card-header">
+                                <img src="assets/img/Figma-logo.svg" alt="logo HTML">
+                            </div>
+                            <div class="card__footer">
+                                <h2>HTML</h2>
+                                <p>1 an d'expérience</p>
+                                <ul>
+                                    <li>Canvas</li>
+                                    <li>Semantic</li>
+                                    <li>Svg</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </article>
                     </div>
                 </div>
-            </div>
-            <div class="wrapper">
-                <div class="one">
-                    <section>
-                        <h2 class="font-subtitle text-center">Qui suis-je ?</h2>
-                        <p>Actuellement en formation de développeur intégrateur web DIPSW, je suis à la recherche
-                            d'un
-                            stage
-                            de 3 mois du 14 mars 2023 au 14 juin 2023.</p>
-                        <p>M'ayant découvert une passion pour le développement, je compte continuer mon parcours
-                            jusqu'à
-                            l'obtention du diplome M2I Bac+5 en alternance l'année prochaine</p>
-                    </section>
-                </div>
+            </section>
 
-
-
-
-                <div class="three">
-                    <section>
-                        <h2 class="font-subtitle text-center">Mes intérêts</h2>
-                        <p> Sur mon temps libre, je me consacre à la correction d'un roman de fantasy que j'ai
-                            écrit.
-                        </p>
-                        <p> Je pratique également beaucoup de sport pour m'aérer l'esprit et me vider la tête. </p>
-                        <p>J'ai toujours eu
-                            un attrait pour les langues, c'est la raison pour laquelle j'apprends l'espagnol en
-                            autodidacte.
-                        </p>
-                        <p> Je profite également de mes jours de repos pour paufiner mes compétences musicales, et
-                            pour
-                            développer mes compétences dans le dessin.</p>
-                    </section>
-                </div>
-            </div>
         </section>
 
     </main>
