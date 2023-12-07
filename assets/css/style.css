@@ -499,7 +499,79 @@ body {
     }
 }
 
+/*JOURNEY --------------------------*/
 
+#journey {
+
+
+    background-color: #1B1B22;
+    color: #FCFCFC;
+
+
+}
+
+.title-journey {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+}
+
+.nav-journey {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+    background-color: #202025;
+    padding-top: 15px;
+    border-radius: 10px;
+    /* background-image: url(../img/point-line3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.nav-journey a {
+
+    text-decoration: none;
+    margin: 5vw;
+
+    @media screen and (max-width: 767px) {
+        margin: 2vw;
+
+    }
+}
+
+.nav-journey i {
+    color: #FCFCFC;
+}
+
+.nav-journey a:hover i {
+    color: #F2AC1D;
+    transition: color 0.3s ease;
+}
+
+.wrapper-journey {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1px;
+    grid-auto-rows: minmax(50px, auto);
+
+}
+
+.journey-section {
+    grid-column: 1 / span 12;
+    grid-row: 3 / span 1;
+
+    padding-top: 15px;
+    border-radius: 10px;
+
+
+}
+
+.journey-section {
+    display: none;
+}
+
+.journey-section:first-of-type {
+    display: block;
+}
 
 /*FOOTER--------------------------*/
 

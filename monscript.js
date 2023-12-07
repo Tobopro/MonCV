@@ -22,3 +22,16 @@ function resetCard(card) {
         li.style.transitionDelay = '0.3s';
     });
 }
+function showSection(sectionId) {
+    // Masquer toutes les sections
+    var sections = document.getElementsByClassName('journey-section');
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+    }
+
+    // Afficher la section spécifique
+    var selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+}
