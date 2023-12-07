@@ -33,9 +33,7 @@
 
 .first-title {
     grid-column: 2 / span 1;
-    /* Commence à la deuxième colonne, s'étend sur une colonne */
     grid-row: 1 / span 1;
-    /* Commence à la première ligne, s'étend sur une ligne */
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 3;
@@ -84,7 +82,6 @@
 
 
 
-
 body {
     background-color: #F8F7FF;
     font-family: 'Open-Sans', sans-serif;
@@ -93,7 +90,7 @@ body {
     line-height: 1.5;
     color: #1B1B22;
     text-align: left;
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -101,31 +98,42 @@ body {
     width: 100%;
     height: 100%;
 
-    @media screen and (max-width: 991px) {
-        margin-top: 30vh;
-
-    }
+    @media screen and (max-width: 991px) {}
 }
 
-.anti-nav {
-    position: relative;
-    top: -31vh;
+
+
+
+nav {
+    height: 0px;
+    top: 30vh;
+    position: sticky;
+    left: 1vw;
+    z-index: 1;
+    margin-left: 15px;
+
+    @media screen and (max-width: 991px) {
+
+        margin-left: 0;
+
+    }
 }
 
 .my-nav-box {
     background-color: #F2AC1D;
     color: #1B1B22;
-    position: sticky;
+
     width: 50px;
     left: 1vw;
-    top: 30vh;
+
+
     padding: 10px;
     justify-content: center;
     color: #1B1B22;
     list-style-type: none;
     text-decoration: none;
     border-radius: 50px;
-    z-index: 1;
+
 
     @media screen and (max-width: 991px) {
         justify-content: flex-end;
@@ -646,3 +654,22 @@ body {
 
 
 /*FOOTER--------------------------*/
+
+.footer-box {
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+    align-items: end;
+    margin-top: 15vh;
+
+    @media screen and (max-width: 991px) {
+        margin-top: 2vh;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 15vh;
+
+    }
+}
