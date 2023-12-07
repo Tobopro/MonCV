@@ -2,7 +2,7 @@
 function hoverCard(card) {
     card.querySelector('.card__header').style.height = '4rem';
     card.querySelector('.card__header img').style.transform = 'scale(5)';
-    card.querySelector('.card__footer').style.height = '16.6rem';
+    card.querySelector('.card__footer').style.height = '20rem';
 
     var lis = card.querySelectorAll('.card__footer ul li');
     lis.forEach(function (li, index) {
