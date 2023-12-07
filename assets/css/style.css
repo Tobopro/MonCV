@@ -308,7 +308,6 @@ nav {
 
 .card:hover .card__footer ul li {
     transform: translate(0);
-    transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
     transition-delay: .3s;
     transition-duration: .3s;
     font-weight: 600;
@@ -336,7 +335,7 @@ nav {
     background-color: transparent;
     box-sizing: border-box;
     overflow: hidden;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .card__footer h2 {

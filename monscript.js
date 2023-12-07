@@ -7,7 +7,7 @@ function hoverCard(card) {
     var lis = card.querySelectorAll('.card__footer ul li');
     lis.forEach(function (li, index) {
         li.style.transform = 'translate(0)';
-        li.style.transitionDelay = (index * 1) + 's';
+        li.style.transitionDelay = (index * 0.3) + 's';
     });
 }
 
@@ -19,7 +19,7 @@ function resetCard(card) {
     var lis = card.querySelectorAll('.card__footer ul li');
     lis.forEach(function (li, index) {
         li.style.transform = 'translateX(-100%)';
-        li.style.transitionDelay = '1s';
+        li.style.transitionDelay = '0.3s';
     });
 }
 function showSection(sectionId) {
