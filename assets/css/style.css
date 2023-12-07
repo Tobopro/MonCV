@@ -583,8 +583,26 @@ nav {
     display: none;
 }
 
+.journey-section-active {
+    display: block;
+}
+
 .journey-section:first-of-type {
     display: block;
+}
+
+.section-info {
+    background-color: #25252b;
+}
+
+.section-info p {
+
+    margin: 15px;
+    padding: 15px;
+    font-size: 1.5rem;
+
+
+
 }
 
 /*CONTACT --------------------------*/
