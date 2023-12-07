@@ -43,7 +43,7 @@
             <div class="margin-profile">
                 &nbsp;<br>&nbsp;
 
-                <div class="wrapper">
+                <div class="wrapper-profile">
                     <div class="first-title">
                         <div class="text-center">
                             <h1 class="font-title">Tom Boyer</h1>
@@ -74,7 +74,7 @@
                     </div>
 
 
-                    <div class="three" id="my-interests">
+                    <div class="three my-blur" id="my-interests">
                         <section>
                             <h2 class="font-subtitle text-center">Mes intérêts</h2>
                             <p> Sur mon temps libre, je me consacre à la rédaction de mon roman.
@@ -87,6 +87,7 @@
                                 développer mes aptitudes en dessin.</p>
                         </section>
                     </div>
+                    <div class="button-blur" onclick="unblur()">En apprendre plus</div>
                 </div>
 
             </div>
@@ -100,7 +101,7 @@
 
                 <h2 class="title-skills">Mes compétences</h2>
                 <section class="section__card">
-                    <div class="wrapper">
+                    <div class="wrapper-skills">
                         <div class="one">
                             <article class="card" onmouseover="hoverCard(this)" onmouseout="resetCard(this)"
                                 ontouchstart="hoverCard(this)" ontouchend="resetCard(this)">
@@ -297,9 +298,10 @@
         <section id="journey">
             <div class="margin-profile">
                 &nbsp;<br>&nbsp;
-
-                <h2 class="title-journey">Mon parcours</h2>
                 <div class="wrapper-journey">
+                    <h2 class="title-journey">Mon parcours</h2>
+
+
                     <div class="nav-journey">
 
                         <a onclick="showSection('internship')"><i class="fa-solid fa-briefcase fa-2xl"></i></a>
@@ -313,35 +315,43 @@
                         <h3>
                             <p>2018 - 2019 | Guebwiller | France</p>
                         </h3>
-                        <h4 class="subtitle-journey">Assistant commercial A.B.I (Alsace Bureautique et Informatique)
+                        <h4 class="subtitle-journey">Assistant commercial | A.B.I (Alsace Bureautique et Informatique)
                         </h4>
-
-                        <p>Amélioration des compétences de communication client</p>
-                        <p>Renseignement des clients par téléphone</p>
-                        <p>Formation aux headquarters RICOH</p>
+                        <div class="section-info">
+                            <p>Amélioration des compétences de communication client</p>
+                            <p>Renseignement des clients par téléphone</p>
+                            <p>Formation aux headquarters RICOH</p>
+                        </div>
                     </div>
                     <div class="journey-section" id="university">
                         <h3>
                             <p>2019 - 2022 | Strasbourg | France</p>
                         </h3>
-                        <h4 class="subtitle-journey">Licence de langues étrangères appliquées</h4>
-
-                        <p>Licence LEA Anglais-Espagnol</p>
+                        <h4 class="subtitle-journey">Licence de langues étrangères appliquées | Université de
+                            Strasbourg
+                        </h4>
+                        <div class="section-info">
+                            <p>Licence LEA Anglais-Espagnol</p>
+                        </div>
                         <h4 class="subtitle-journey">Président de l'amicale de langues étrangères appliquées</h4>
-                        <p>Amélioration des compétences de gestion de projet et de gestion
-                            d'équipe</p>
-                        <p>Gestion de partenariats</p>
+                        <div class="section-info">
+                            <p>Amélioration des compétences de gestion de projet et de gestion
+                                d'équipe</p>
+                            <p>Gestion de partenariats</p>
+                        </div>
                         <h4 class="subtitle-journey">Community manager de l'amicale de langues étrangères appliquées
                         </h4>
-                        <p>Amélioration des compétences de gestion de projet et de gestion
-                            d'équipe</p>
-                        <p>Gestion de partenariats</p>
+                        <div class="section-info">
+                            <p>Amélioration des compétences de gestion de projet et de gestion
+                                d'équipe</p>
+                            <p>Gestion de partenariats</p>
+                        </div>
                     </div>
                     <div class="journey-section journey-section-active" id="training">
                         <h3>
                             <p> 2022 | Galway | Irlande</p>
                         </h3>
-                        <h4 class="subtitle-journey">Stage d'assistant professeur à Corrib English</h4>
+                        <h4 class="subtitle-journey">Stage d'assistant professeur | Corrib English</h4>
                         <div class="section-info">
                             <p>Gestion de l'arrivée des nouveaux étudiants</p>
                             <p>Préparation des cours</p>
@@ -353,26 +363,14 @@
                         </div>
 
                     </div>
-                    <div class="journey-section" id="diplomas">
-                        <h3>
-                            <p>Mes certifications</p>
-                        </h3>
-
-                        <p>LanguageCert Level 3 Certificat in ESOL International C2</p>
-                        <p>Diplome de langues étrangères appliquées</p>
-                        <p>Attestation de qualification reconnue dans les classifications CCN - CCN de la Commerce de
-                            détail</p>
-                        <p>Baccalauréat Scientifique</p>
-
-
-                    </div>
                     <div class="journey-section" id="CCI-degree">
                         <h3>
                             <p>2023 - 2024 | Strasbourg | France</p>
 
                         </h3>
+
+                        <h4 class="subtitle-journey">Formation DIPS | CCI Campus</h4>
                         <div class="section-info">
-                            <h4 class="subtitle-journey">CCI Campus</h4>
                             <p>Conception de projets</p>
                             <p>Création de sites web</p>
                             <p>Design</p>
@@ -382,8 +380,22 @@
                             <p>Intégration d'API</p>
                             <p>Création de maquettes</p>
                         </div>
+                    </div>
+                    <div class="journey-section" id="diplomas">
+                        <h3>
+                            <p>Mes certifications</p>
+                        </h3>
+                        <div class="section-info">
+                            <p>LanguageCert Level 3 Certificat in ESOL International C2</p>
+                            <p>Diplome de langues étrangères appliquées</p>
+                            <p>Attestation de qualification reconnue dans les classifications CCN - CCN de la Commerce
+                                de
+                                détail</p>
+                            <p>Baccalauréat Scientifique</p>
+                        </div>
 
                     </div>
+
                 </div>
             </div>
         </section>
@@ -402,9 +414,10 @@
 
                         <p><i class="fa-regular fa-paper-plane fa-2xl"></i>Envoyez moi un mail : <a
                                 href="mailto:tom.boyertb68@gmail.com">tom.boyertb68@gmail.com</a></p>
-                        <p><i class="fa-brands fa-linkedin fa-2xl"></i> Ou contactez-moi sur Linkedin juste
+                        <p><i class="fa-brands fa-linkedin fa-2xl"></i> Contactez-moi sur Linkedin juste
                             <a href="https://www.linkedin.com/in/tom-boyer-4b974b208/">ici</a>
                         </p>
+
 
                     </div>
                 </div>

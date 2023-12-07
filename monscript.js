@@ -35,3 +35,18 @@ function showSection(sectionId) {
         selectedSection.style.display = 'block';
     }
 }
+
+function unblur() {
+    var section = document.getElementById('my-interests');
+
+    if (section.classList.contains('my-unblur')) {
+        section.classList.remove('my-unblur');
+        section.classList.add('my-blur');
+    }
+    else {
+        section.classList.remove('my-blur');
+        section.classList.add('my-unblur');
+    }
+
+
+}
