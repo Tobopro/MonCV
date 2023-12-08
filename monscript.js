@@ -22,7 +22,7 @@ function resetCard(card) {
         li.style.transitionDelay = '0.3s';
     });
 }
-function showSection(sectionId) {
+function showSection(sectionId, icon) {
     // Masquer toutes les sections
     var sections = document.getElementsByClassName('journey-section');
     for (var i = 0; i < sections.length; i++) {
@@ -34,7 +34,17 @@ function showSection(sectionId) {
     if (selectedSection) {
         selectedSection.style.display = 'block';
     }
+
+    // Retirer la classe 'active' de tous les icônes
+    var icons = document.querySelectorAll('.nav-journey a i');
+    icons.forEach(function (icon) {
+        icon.classList.remove('active');
+    });
+
+    // Ajouter la classe 'active' à l'icône cliqué
+    icon.classList.add('active');
 }
+
 
 function unblur() {
     var section = document.getElementById('my-interests');
@@ -48,5 +58,19 @@ function unblur() {
         section.classList.add('my-unblur');
     }
 
+    var buttons = document.querySelectorAll('.button-blur');
+    buttons.forEach(function (button) {
+        button.classList.toggle('d-none');
+    });
 
+
+}
+
+function handleClick(element) {
+
+    var links = document.querySelectorAll('.nav-journey a');
+    links.forEach(link => link.classList.remove('clicked'));
+
+
+    element.classList.add('clicked');
 }
