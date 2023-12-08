@@ -377,13 +377,15 @@ nav {
 
 
     background-image: url(../img/fond-blanc.jpg);
+    padding-bottom: 10vh;
+    padding-top: 5vh;
 
 
 }
 
 .title-skills {
     grid-column: 1 / span 3;
-    grid-row: 3 / span 1;
+    grid-row: 1 / span 1;
 }
 
 
@@ -414,11 +416,13 @@ nav {
 .card {
     height: 17rem;
     width: 20rem;
-    border: 2px solid #fff;
+    border: 2px solid #1B1B22;
     padding: 2rem;
-    background-color: transparent;
+    background-color: #FCFCFC;
     box-sizing: border-box;
     overflow: hidden;
+
+
 }
 
 .card:hover .card__header {
@@ -462,7 +466,7 @@ nav {
 .card__footer {
     position: relative;
     height: 36px;
-    background-color: transparent;
+    background-color: #FCFCFC;
     box-sizing: border-box;
     overflow: hidden;
     transition: 0.3s;
@@ -556,7 +560,7 @@ nav {
     @media screen and (max-width: 991px) {
 
         grid-column: 1 / span 4;
-        grid-row: 1 / span 1;
+        grid-row: 2 / span 1;
     }
 }
 
@@ -566,7 +570,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 2 / span 1;
+        grid-row: 3 / span 1;
     }
 }
 
@@ -576,7 +580,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 3 / span 1;
+        grid-row: 4 / span 1;
     }
 }
 
@@ -586,7 +590,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 4 / span 1;
+        grid-row: 5 / span 1;
     }
 }
 
@@ -596,7 +600,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 5 / span 1;
+        grid-row: 6 / span 1;
     }
 }
 
@@ -606,7 +610,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 6 / span 1;
+        grid-row: 7 / span 1;
     }
 }
 
@@ -616,7 +620,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 7 / span 1;
+        grid-row: 8 / span 1;
     }
 }
 
@@ -626,7 +630,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 8 / span 1;
+        grid-row: 9 / span 1;
     }
 }
 
@@ -636,7 +640,7 @@ nav {
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
-        grid-row: 9 / span 1;
+        grid-row: 10 / span 1;
     }
 }
 
@@ -647,6 +651,7 @@ nav {
     min-height: 110vh;
     background-color: #1B1B22;
     color: #FCFCFC;
+    padding-top: 5vh;
 
 
 }
@@ -755,6 +760,7 @@ nav {
 
 #contact {
 
+    padding-top: 5vh;
     min-height: 100vh;
     background-image: url(../img/fond-blanc-formes.jpg);
 }

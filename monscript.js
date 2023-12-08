@@ -1,27 +1,90 @@
+function isAboveMediumScreen() {
+    return window.innerWidth >= 770; // Ajustez la valeur du seuil selon vos besoins
+}
+
 
 function hoverCard(card) {
-    card.querySelector('.card__header').style.height = '4rem';
-    card.querySelector('.card__header img').style.transform = 'scale(5)';
-    card.querySelector('.card__footer').style.height = '20rem';
+    if (isAboveMediumScreen()) {
+        card.querySelector('.card__header').style.height = '4rem';
+        card.querySelector('.card__header img').style.transform = 'scale(5)';
+        card.querySelector('.card__footer').style.height = '20rem';
 
-    var lis = card.querySelectorAll('.card__footer ul li');
-    lis.forEach(function (li, index) {
-        li.style.transform = 'translate(0)';
-        li.style.transitionDelay = (index * 0.3) + 's';
-    });
+        var lis = card.querySelectorAll('.card__footer ul li');
+        lis.forEach(function (li, index) {
+            li.style.transform = 'translate(0)';
+            li.style.transitionDelay = (index * 0.3) + 's';
+        });
+    }
+
 }
-
 function resetCard(card) {
-    card.querySelector('.card__header').style.height = '17rem';
-    card.querySelector('.card__header img').style.transform = 'scale(1)';
-    card.querySelector('.card__footer').style.height = '36px';
+    if (isAboveMediumScreen()) {
+        card.querySelector('.card__header').style.height = '17rem';
+        card.querySelector('.card__header img').style.transform = 'scale(1)';
+        card.querySelector('.card__footer').style.height = '36px';
 
-    var lis = card.querySelectorAll('.card__footer ul li');
-    lis.forEach(function (li, index) {
-        li.style.transform = 'translateX(-100%)';
-        li.style.transitionDelay = '0.3s';
+        var lis = card.querySelectorAll('.card__footer ul li');
+        lis.forEach(function (li, index) {
+            li.style.transform = 'translateX(-100%)';
+            li.style.transitionDelay = '0.3s';
+        });
+    }
+}
+
+function isBelowMediumScreen() {
+    return window.innerWidth < 770; // Ajustez la valeur du seuil selon vos besoins
+}
+
+// Fonction pour vérifier si un élément est dans la vue
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= ((window.innerHeight || document.documentElement.clientHeight) / 1.5) &&
+        rect.right <= ((window.innerWidth || document.documentElement.clientWidth))
+    );
+}
+
+// Fonction pour gérer l'effet au survol de la carte
+function handleCardEffect(card) {
+    if (isInViewport(card) && isBelowMediumScreen()) {
+        card.querySelector('.card__header').style.height = '4rem';
+        card.querySelector('.card__header img').style.transform = 'scale(5)';
+        card.querySelector('.card__footer').style.height = '20rem';
+
+        var lis = card.querySelectorAll('.card__footer ul li');
+        lis.forEach(function (li, index) {
+            li.style.transform = 'translate(0)';
+            li.style.transitionDelay = (index * 0.3) + 's';
+        });
+    } else {
+        card.querySelector('.card__header').style.height = '17rem';
+        card.querySelector('.card__header img').style.transform = 'scale(1)';
+        card.querySelector('.card__footer').style.height = '36px';
+
+        var lis = card.querySelectorAll('.card__footer ul li');
+        lis.forEach(function (li, index) {
+            li.style.transform = 'translateX(-100%)';
+            li.style.transitionDelay = '0.3s';
+        });
+    }
+}
+
+// Fonction pour gérer les effets pour toutes les cartes
+function handleScrollEffects() {
+    var cards = document.querySelectorAll('.card');
+    cards.forEach(function (card) {
+        handleCardEffect(card);
     });
 }
+
+// Écoute de l'événement scroll
+window.addEventListener('scroll', handleScrollEffects);
+
+// Appeler la fonction une fois au chargement de la page pour gérer les cartes initialement visibles
+document.addEventListener('DOMContentLoaded', handleScrollEffects);
+
 
 function showSection(sectionId) {
     // Masquer toutes les sections
