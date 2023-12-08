@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.font-title {
+    font-family: 'Nunito', sans-serif;
+}
+
 .font-subtitle {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
@@ -18,7 +22,51 @@ html {
     color: #FCFCFC;
 }
 
-.wrapper {}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    @media screen and (max-width: 991px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+
+    }
+}
+
+.one {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+
+    }
+}
+
+.two {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+
+    }
+}
+
+.three {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 1;
+
+    }
+}
 
 
 
@@ -156,25 +204,22 @@ nav {
 
 }
 
+.all-text-profile {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+
 .margin-profile {
     margin-left: 10vw;
-    /* margin-right: 10vw; */
+    margin-right: 10vw;
 }
 
-#profile-picture img {
-    position: relative;
-    top: 0vh;
-    width: 100%;
-    min-height: 110vh;
 
-    @media screen and (max-width: 991px) {
-        width: 70%;
-
-    }
-
-}
 
 .wrapper-profile {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -183,6 +228,12 @@ nav {
     @media screen and (max-width: 991px) {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(10px, auto);
+
+    }
+
+    @media screen and (max-width: 765px) {
+
+        top: -15vh;
 
     }
 }
@@ -204,115 +255,87 @@ nav {
 
 .profile-title {
     grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-left: 10vw;
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 3;
         grid-row: 1 / span 1;
+        margin-right: 10vw;
 
     }
 }
 
-.one {
+.profile-title img {
+    width: 100%;
+
+}
+
+
+.text-profile {
     grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
+    margin-left: 10vw;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        margin-right: 10vw;
+
+    }
+}
+
+.text-extends {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    margin-left: 10vw;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        margin-right: 10vw;
+
+    }
+}
+
+.profile-picture {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 3;
+
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 3;
         grid-row: 3 / span 1;
 
     }
-}
 
-.two {
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 3;
-
-    @media screen and (max-width: 991px) {
-        grid-column: 1 / span 3;
-        grid-row: 2 / span 1;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 10vh;
 
     }
 }
 
-.three {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
+.profile-picture img {
+    position: relative;
+    width: 60%;
+    top: -5vh;
+
+    /* min-height: 80vh; */
 
 
-    @media screen and (max-width: 991px) {
-        grid-column: 1 / span 3;
-        grid-row: 4 / span 1;
+    @media screen and (max-width: 767px) {
+        width: 80%;
+        top: 0vh;
 
     }
+
+
 }
+
+
+
 
 .button-extends {
-
-    background-color: #1B1B22;
-    color: #FCFCFC;
-    border: 2px solid #FCFCFC;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 1.2rem;
-
-    font-weight: 400;
-    text-decoration: none;
-    margin: 5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    text-align: center;
-    width: 50px;
-    max-height: 50px;
-    display: block;
-    margin-right: auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    z-index: 1;
-
-    @media screen and (max-width: 991px) {
-        grid-column: 1 / span 3;
-        grid-row: 4 / span 1;
-
-    }
-}
-
-.button-decrease {
-
-    background-color: #1B1B22;
-    color: #FCFCFC;
-    border: 2px solid #FCFCFC;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 1.2rem;
-
-    font-weight: 400;
-    text-decoration: none;
-    margin: 5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    text-align: center;
-    width: 50px;
-    max-height: 50px;
-    display: block;
-    margin-right: auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    z-index: 1;
-
-    @media screen and (max-width: 991px) {
-        grid-column: 1 / span 3;
-        grid-row: 4 / span 1;
-
-    }
-}
-
-.button-blur {
-    display: none;
     background-color: #1B1B22;
     color: #FCFCFC;
     border: 2px solid #FCFCFC;
@@ -327,19 +350,16 @@ nav {
     cursor: pointer;
     text-align: center;
     width: 200px;
-    max-height: 50px;
     display: block;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
-    margin-top: 10vh;
     margin-bottom: 10vh;
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    z-index: 1;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 3;
-        grid-row: 4 / span 1;
+        grid-row: 5 / span 1;
 
     }
 }
@@ -396,7 +416,7 @@ nav {
     width: 20rem;
     border: 2px solid #fff;
     padding: 2rem;
-    background-color: #FCFCFC;
+    background-color: transparent;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -442,7 +462,7 @@ nav {
 .card__footer {
     position: relative;
     height: 36px;
-    background-color: #FCFCFC;
+    background-color: transparent;
     box-sizing: border-box;
     overflow: hidden;
     transition: 0.3s;
@@ -681,14 +701,10 @@ nav {
     color: #FCFCFC;
 }
 
-.nav-journey i:hover {
+.nav-journey a:hover i {
     color: #F2AC1D;
     transition: color 0.3s ease;
 }
-
-
-
-
 
 .nav-journey .active-journey-icon {
     color: #F2AC1D;
