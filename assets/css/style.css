@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.font-title {
-    font-family: 'Nunito', sans-serif;
-}
-
 .font-subtitle {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
@@ -22,18 +18,7 @@ html {
     color: #FCFCFC;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-
-    @media screen and (max-width: 991px) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(10px, auto);
-
-    }
-}
+.wrapper {}
 
 
 
@@ -190,9 +175,14 @@ nav {
 }
 
 .wrapper-profile {
-    @media screen and (max-width: 765px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 
-        top: -15vh;
+    @media screen and (max-width: 991px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(10px, auto);
 
     }
 }
@@ -212,7 +202,7 @@ nav {
 
 
 
-.first-title {
+.profile-title {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
 
