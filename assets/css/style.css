@@ -158,14 +158,14 @@ nav {
 
 .margin-profile {
     margin-left: 10vw;
-    margin-right: 10vw;
+    /* margin-right: 10vw; */
 }
 
-#profile img {
+#profile-picture img {
     position: relative;
-    top: -2vh;
+    top: 0vh;
     width: 100%;
-    max-width: 300px;
+    min-height: 110vh;
 
     @media screen and (max-width: 991px) {
         width: 70%;
@@ -203,7 +203,7 @@ nav {
 
 
 .profile-title {
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 
     @media screen and (max-width: 991px) {
@@ -225,8 +225,8 @@ nav {
 }
 
 .two {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 3;
@@ -236,8 +236,73 @@ nav {
 }
 
 .three {
-    grid-column: 3 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 1;
+
+    }
+}
+
+.button-extends {
+
+    background-color: #1B1B22;
+    color: #FCFCFC;
+    border: 2px solid #FCFCFC;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+
+    font-weight: 400;
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 50px;
+    max-height: 50px;
+    display: block;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    z-index: 1;
+
+    @media screen and (max-width: 991px) {
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 1;
+
+    }
+}
+
+.button-decrease {
+
+    background-color: #1B1B22;
+    color: #FCFCFC;
+    border: 2px solid #FCFCFC;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+
+    font-weight: 400;
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 50px;
+    max-height: 50px;
+    display: block;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    z-index: 1;
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 3;
@@ -247,6 +312,7 @@ nav {
 }
 
 .button-blur {
+    display: none;
     background-color: #1B1B22;
     color: #FCFCFC;
     border: 2px solid #FCFCFC;
@@ -267,7 +333,7 @@ nav {
     margin-right: auto;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    grid-column: 3 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     z-index: 1;
 

@@ -84,3 +84,28 @@ function handleClick(element) {
 
     element.classList.add('clicked');
 }
+
+function extendsText() {
+    var firstText = document.getElementById('text-origin');
+    firstText.classList.add('d-none');
+
+    var extendedText = document.getElementById('my-interests');
+    extendedText.classList.remove('d-none');
+
+
+
+}
+
+function decreaseText() {
+
+    var extendedText = document.getElementById('my-interests');
+    extendedText.classList.add('d-none');
+
+    var firstText = document.getElementById('text-origin');
+    firstText.classList.remove('d-none');
+
+
+
+
+}
+

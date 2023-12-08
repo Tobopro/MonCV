@@ -42,18 +42,17 @@
         <section id="profile">
             <div class="margin-profile">
                 &nbsp;<br>&nbsp;
-
                 <div class="wrapper-profile">
+
                     <div class="profile-title">
                         <div class="text-center">
                             <h1 class="font-title">Tom Boyer</h1>
                             <img src="assets/img/line_for_name_profile.png" alt="">
                         </div>
                     </div>
-                </div>
 
-                <div class="wrapper-profile">
-                    <div class="one">
+
+                    <div class="one " id="text-origin">
                         <section>
                             <h2 class="font-subtitle text-center">Qui suis-je ?</h2>
                             <p>Actuellement en formation de développeur intégrateur web DIPSW, je suis à la recherche
@@ -63,18 +62,19 @@
                             <p>Après la fin de ma formation, j'ai pour projet de continuer mon parcours académique
                                 jusqu'à
                                 l'obtention du diplome M2I Bac+5 en alternance l'année prochaine.</p>
+                            <div class="button-extends" onclick="extendsText()"><i class="fa-solid fa-plus"></i></div>
                         </section>
                     </div>
 
 
                     <div class="two">
-                        <section id="profile_picture" class=" text-center ">
-                            <img src="assets/img/placeholder_profile_picture_rounded.png" alt="">
+                        <section id="profile-picture" class=" text-center ">
+                            <img src="assets/img/bee-with-flower.jpg" alt="">
                         </section>
                     </div>
 
 
-                    <div class="three my-blur" id="my-interests">
+                    <div class="three text-extends d-none" id="my-interests">
                         <section>
                             <h2 class="font-subtitle text-center">Mes intérêts</h2>
                             <p> Sur mon temps libre, je me consacre à la rédaction de mon roman.
@@ -85,9 +85,11 @@
 
                             <p> Je profite également de mes jours de repos pour affiner mes compétences musicales et
                                 développer mes aptitudes en dessin.</p>
+                            <div class="button-decrease" onclick="decreaseText()"><i class="fa-solid fa-minus"></i>
+                            </div>
                         </section>
                     </div>
-                    <div class="button-blur" onclick="unblur()">En apprendre plus</div>
+                    <!-- <div class="button-blur" onclick="unblur()">En apprendre plus</div> -->
                 </div>
 
             </div>
