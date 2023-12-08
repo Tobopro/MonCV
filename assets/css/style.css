@@ -719,6 +719,7 @@ nav {
     padding-top: 15px;
     border-radius: 10px;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 
 
 }
@@ -754,14 +755,12 @@ nav {
 
 #contact {
 
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/fond-blanc-formes.jpg);
 }
 
 #contact img {
-
     width: 100%;
-
 }
 
 
@@ -769,8 +768,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
-
+    grid-auto-rows: minmax(10px, auto);
 }
 
 
@@ -781,7 +779,6 @@ nav {
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 6;
         grid-row: 1 / span 1;
-
     }
 }
 
@@ -802,6 +799,10 @@ nav {
     margin-top: 10%;
     font-size: 120%;
     font-family: 'Nunito', sans-serif;
+
+    @media screen and (max-width: 767px) {
+        font-size: 100%;
+    }
 }
 
 .contact-info i {
@@ -826,12 +827,12 @@ nav {
     margin-top: 15vh;
 
     @media screen and (max-width: 991px) {
-        margin-top: 2vh;
+        margin-bottom: 6vh;
 
     }
 
     @media screen and (max-width: 767px) {
-        margin-top: 15vh;
+        margin-bottom: 10vh;
 
     }
 }
