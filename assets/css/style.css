@@ -338,7 +338,7 @@ nav {
     width: 20rem;
     border: 2px solid #fff;
     padding: 2rem;
-    background-color: transparent;
+    background-color: #FCFCFC;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -384,7 +384,7 @@ nav {
 .card__footer {
     position: relative;
     height: 36px;
-    background-color: transparent;
+    background-color: #FCFCFC;
     box-sizing: border-box;
     overflow: hidden;
     transition: 0.3s;
