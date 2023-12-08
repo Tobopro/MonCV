@@ -615,9 +615,17 @@ nav {
     color: #FCFCFC;
 }
 
-.active {
+.nav-journey i:hover {
     color: #F2AC1D;
     transition: color 0.3s ease;
+}
+
+
+
+
+
+.nav-journey .active-journey-icon {
+    color: #F2AC1D;
 }
 
 

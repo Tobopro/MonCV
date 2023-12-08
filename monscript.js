@@ -22,7 +22,8 @@ function resetCard(card) {
         li.style.transitionDelay = '0.3s';
     });
 }
-function showSection(sectionId, icon) {
+
+function showSection(sectionId) {
     // Masquer toutes les sections
     var sections = document.getElementsByClassName('journey-section');
     for (var i = 0; i < sections.length; i++) {
@@ -35,14 +36,23 @@ function showSection(sectionId, icon) {
         selectedSection.style.display = 'block';
     }
 
-    // Retirer la classe 'active' de tous les icônes
-    var icons = document.querySelectorAll('.nav-journey a i');
-    icons.forEach(function (icon) {
-        icon.classList.remove('active');
-    });
+    var buttons = document.querySelectorAll('.nav-journey a i');
+    if (buttons) {
+        buttons.forEach(function (button) {
+            button.classList.remove('active-journey-icon');
+            button.classList.add('inactive-journey-icon');
+        });
 
-    // Ajouter la classe 'active' à l'icône cliqué
-    icon.classList.add('active');
+    }
+
+    var button = document.querySelector('.nav-journey a[onclick="showSection(\'' + sectionId + '\')"] i');
+    if (button) {
+        button.classList.remove('inactive-journey-icon');
+        button.classList.add('active-journey-icon');
+    }
+
+
+
 }
 
 
