@@ -189,6 +189,48 @@ nav {
     transition: color 0.3s ease;
 }
 
+/*LANGUAGE--------------------------*/
+
+.language-selector {
+    height: 0px;
+    top: 1vh;
+    position: sticky;
+    left: 1vw;
+    z-index: 1;
+    margin-left: 15px;
+
+}
+
+.language-content {
+    background-color: #F2AC1D;
+    color: #1B1B22;
+
+    width: 100px;
+    left: 1vw;
+
+
+
+    padding: 10px;
+    justify-content: center;
+    color: #1B1B22;
+    list-style-type: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.language-content a {
+    margin-right: 10px;
+    /* Ajoute une marge à droite entre les drapeaux (ajustez selon vos besoins) */
+}
+
+.language-selector img {
+    width: 100%;
+}
+
+
 
 /*PROFILE--------------------------*/
 
@@ -529,12 +571,17 @@ nav {
     background-color: #1B1B22;
 }
 
-.sass-card-header {
-    background-color: #500e33;
+.sql-card-header {
+    background-color: #0f4a81;
 }
 
-.illustrator-card-header {
-    background-color: #461908;
+.adobe-card-header {
+    background-color: #eb1000;
+}
+
+.adobe-card-header img {
+
+    width: 100%;
 }
 
 .symfony-card-header {
