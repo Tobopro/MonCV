@@ -195,6 +195,7 @@ nav {
 #profile {
 
     min-height: 110vh;
+    padding-top: 2vh;
     /* background-image: url(../img/landscapefull2.jpg);
     top: -10vh; */
     background-color: #1B1B22;
