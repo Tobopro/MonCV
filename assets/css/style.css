@@ -198,6 +198,12 @@ nav {
     left: 1vw;
     z-index: 1;
     margin-left: 95vw;
+
+    @media screen and (max-width: 991px) {
+
+        margin-left: 85vw;
+
+    }
 }
 
 .language-content {
