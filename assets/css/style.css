@@ -607,6 +607,11 @@ nav {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
 
+    @media screen and (max-width: 1340px) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
     @media screen and (max-width: 991px) {
 
         grid-column: 1 / span 4;
@@ -618,6 +623,11 @@ nav {
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
 
+    @media screen and (max-width: 1340px) {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
         grid-row: 3 / span 1;
@@ -628,6 +638,11 @@ nav {
     grid-column: 4 / span 1;
     grid-row: 2 / span 1;
 
+    @media screen and (max-width: 1340px) {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+    }
+
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
         grid-row: 4 / span 1;
@@ -637,6 +652,8 @@ nav {
 #skills .four {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
+
+
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
@@ -668,6 +685,11 @@ nav {
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
 
+    @media screen and (max-width: 1340px) {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
         grid-row: 8 / span 1;
@@ -678,6 +700,11 @@ nav {
     grid-column: 3 / span 1;
     grid-row: 4 / span 1;
 
+    @media screen and (max-width: 1340px) {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+    }
+
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
         grid-row: 9 / span 1;
@@ -687,6 +714,11 @@ nav {
 #skills .nine {
     grid-column: 4 / span 1;
     grid-row: 4 / span 1;
+
+    @media screen and (max-width: 1340px) {
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+    }
 
     @media screen and (max-width: 991px) {
         grid-column: 1 / span 4;
@@ -730,6 +762,23 @@ nav {
     @media screen and (max-width: 1025px) {
         grid-column: 4 / span 8;
         grid-row: 2 / span 1;
+
+    }
+
+}
+
+.arrow-text {
+    grid-column: 8 / span 4;
+    grid-row: 2 / span 1;
+    font-size: 1.5rem;
+    margin-top: -75px;
+
+    @media screen and (max-width: 1025px) {
+        grid-column: 4 / span 8;
+        grid-row: 2 / span 1;
+        margin-top: 50px;
+        font-size: 1rem;
+
 
     }
 
@@ -787,6 +836,16 @@ nav {
     color: #F2AC1D;
 }
 
+.diplomas-icon i {
+    margin-left: 10vw;
+
+    @media screen and (max-width: 1040px) {
+        margin-left: 5vw;
+
+    }
+
+
+}
 
 
 
