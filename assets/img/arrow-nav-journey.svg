@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.3 70.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: HighestPraise-Regular, 'Highest Praise';
+        font-size: 24.22px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        letter-spacing: .02em;
+      }
+
+      .cls-6 {
+        letter-spacing: .01em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="m154.16,45.91l.61,19.21s15.37-9.91,29.33-31.35c13.96-21.44-30.54-28.52-30.54-28.52,0,0-101.53-14.36-58.04,29.33,43.48,43.69,55.21-11.73,16.38-29.93s-77.26,29.33-77.26,29.33"/>
+  <line class="cls-4" x1="154.76" y1="65.12" x2="177.62" y2="62.09"/>
+  <text class="cls-1" transform="translate(2.27 52.26) rotate(9.09) scale(.91 1)"><tspan class="cls-8" x="0" y="0">Na</tspan><tspan class="cls-6" x="19.89" y="0">v</tspan><tspan class="cls-7" x="27.35" y="0">i</tspan><tspan class="cls-3" x="31.93" y="0">g</tspan><tspan class="cls-5" x="41.04" y="0">u</tspan><tspan class="cls-6" x="50" y="0">e</tspan><tspan class="cls-2" x="57.46" y="0">z</tspan></text>
+</svg>
