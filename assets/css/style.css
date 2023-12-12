@@ -197,40 +197,36 @@ nav {
     position: sticky;
     left: 1vw;
     z-index: 1;
-    margin-left: 15px;
-
+    margin-left: 95vw;
 }
 
 .language-content {
     background-color: #F2AC1D;
     color: #1B1B22;
-
-    width: 100px;
+    display: flex;
     left: 1vw;
-
-
-
-    padding: 10px;
+    width: 50px;
+    padding: 2px;
     justify-content: center;
     color: #1B1B22;
     list-style-type: none;
     text-decoration: none;
     border-radius: 50px;
-    display: flex;
     align-items: center;
-
-}
-
-.language-content a {
-    margin-right: 10px;
-    /* Ajoute une marge à droite entre les drapeaux (ajustez selon vos besoins) */
 }
 
 .language-selector img {
     width: 100%;
 }
 
+.french-flag {
+    padding: 4px;
+}
 
+.french-flag img {
+    border: 2px solid #1B1B22;
+    border-radius: 100%;
+}
 
 /*PROFILE--------------------------*/
 
