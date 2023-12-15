@@ -982,13 +982,21 @@ nav {
 }
 
 .contact-info i {
-
     margin-right: 5%;
+}
 
+.contact-info :first-child a {
     @media screen and (max-width: 767px) {
-        margin-right: 0;
+        margin-left: 15%;
     }
+}
 
+.contact-info a {
+
+    color: #1B1B22;
+
+
+    transition: color 0.3s ease;
 }
 
 
