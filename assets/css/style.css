@@ -448,7 +448,7 @@ nav {
 .section__card {
     display: flex;
     justify-content: center;
-    max-width: 100vw;
+    max-width: 95vw;
 }
 
 .card__footer h2 {
