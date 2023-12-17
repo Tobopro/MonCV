@@ -364,6 +364,7 @@ nav {
     position: relative;
     width: 60%;
     top: -5vh;
+    border-radius: 50%;
 
     /* min-height: 80vh; */
 
