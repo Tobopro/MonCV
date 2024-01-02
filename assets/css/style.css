@@ -993,11 +993,7 @@ nav {
 /*FOOTER--------------------------*/
 
 .footer-box {
-    display: flex;
 
-    align-content: end;
-    justify-content: center;
-    align-items: end;
     margin-top: 15vh;
 
     @media screen and (max-width: 991px) {
@@ -1009,4 +1005,9 @@ nav {
         margin-bottom: 10vh;
 
     }
+}
+
+.footer-box p {
+    display: flex;
+    justify-content: center;
 }
